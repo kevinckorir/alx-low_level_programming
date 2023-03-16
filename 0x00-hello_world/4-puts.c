@@ -1,5 +1,10 @@
 #include <stdio.h>
-/*print programming is like building...using puts*/
+/**
+*main - print programming is like building...using puts
+*
+*print to standard out
+*Return: 0
+*/
 int main(void)
 {
 	char str[] = "\"Programming is like building a multilingual puzzle";
