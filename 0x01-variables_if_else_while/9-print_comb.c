@@ -12,7 +12,7 @@ int main(void)
 	{
 		putchar(i + '0');
 		if (i < 9)
-		putchar(44);
+		putchar(',');
 		putchar(32);
 	}
 	/*putchar(10);*/
