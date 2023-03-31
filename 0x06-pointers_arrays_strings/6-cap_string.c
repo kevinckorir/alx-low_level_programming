@@ -13,7 +13,8 @@ char *cap_string(char *str)
 
 	for (k = 0; str[k] != '\0'; k++)
 	{
-		if (isspace(str[k]) /*|| ispunct(str[k])*/)
+		if (isspace(str[k]) || (str[k] == 9 || str[k] == 10 || str[k] == 44 || str[k] == 46 || str[k] == 59 || str[k] == 33 || str[k] == 63 || str[k] == 34 || str[k] == 40 || str[k] == 41 || str[k] == 123 || str[k] == 125))
+
 		{
 			cap_following_char = 1;
 		}
