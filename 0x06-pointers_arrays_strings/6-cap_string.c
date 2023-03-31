@@ -13,7 +13,7 @@ char *cap_string(char *str)
 
 	for (k = 0; str[k] != '\0'; k++)
 	{
-		if (isspace(str[k]) || ispunct(str[k]))
+		if (isspace(str[k]) /*|| ispunct(str[k])*/)
 		{
 			cap_following_char = 1;
 		}
