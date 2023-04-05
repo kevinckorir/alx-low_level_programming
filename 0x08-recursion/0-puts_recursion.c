@@ -2,10 +2,10 @@
 #include <string.h>
 
 /**
- * _puts_recursion - prints a string 
- * @s: string parameter
- * Return: Nothing
- */
+* _puts_recursion - prints a string
+* @s: string parameter
+* Return: Nothing
+*/
 void _puts_recursion(char *s)
 {
 	if (strlen(s) == 0)
