@@ -19,6 +19,15 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
+	if (s1 == NULL)
+	{ 
+		s1 = "";
+	}
+	if (s2 == NULL)
+	{
+		s2 = "";
+	}
+
 	strncpy(result, s1, length1);
 	strncpy(result + length1, s2, length2);
 	result[length1 + length2] = '\0';
