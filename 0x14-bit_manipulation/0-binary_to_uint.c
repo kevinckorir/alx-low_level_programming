@@ -11,7 +11,7 @@ unsigned int binary_to_uint(const char *b)
 {
 	int i;
 	unsigned int result = 0;
-	int len;
+	/*int len;*/
 	int num = 0;
 	int temp, last_digit;
 	int base;
@@ -19,8 +19,7 @@ unsigned int binary_to_uint(const char *b)
 	base = 1;
 	if (b == NULL)
 		return (0);
-	len = strlen(b);
-	for (i = 0; i < len; i++)
+	for (i = 0; b[i] != '\0'; i++)
 	{
 		num = num * 10 + (b[i] - 48);
 	}
